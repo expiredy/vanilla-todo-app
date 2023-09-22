@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+#task-form{
+    display: block;
+}

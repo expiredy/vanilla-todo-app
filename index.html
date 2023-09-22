@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+    <script src="./index.js"></script>
+    <title>TODO-app</title>
+</head>
+<body>
+    <header>
+        <h2>The greatest TODO app</h2>
+    </header>
+    <main>
+        <div id="tasks-manager">
+            <ul id="tasks-viewer">
+
+            </ul>
+            <article id="tasks-form">
+                <button type="button" id="add-task" onclick="taskCreationAction()">
+                    <span>Add the task</span>
+                </button>
+                <form id="task-form">
+                    <input type="text" id="task-title" placeholder="Enter task`s name">
+                    <textarea id="task-description" placeholder="Enter description of the task"></textarea>
+                    <button type="button" onclick="addTask()"></button>
+                </form>
+            </article>
+        </div>
+        <div id="control-hud" class="grid-container">
+            <button type="button" id="styled-even-btn">
+                <span>Highlight the even tasks</span>
+            </button>
+            <button type="button" id="styled-odd-btn">
+                <span>Highlight the odd tasks</span>
+            </button>
+            <button type="button" id="del-last-el">
+                <span>Delete last task</span>
+            </button>
+            <button type="button" id="del-first-el">
+                <span>Delete first task</span>
+            </button>
+        </div>
+    </main>    
+</body>
+</html>
